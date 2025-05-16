@@ -13,11 +13,11 @@
     </head>
     <body>
         <h1>View All Book</h1>
-        <form action="ViewBookServlet.do">
+        <form action="ViewBookServlet.do" method="post">
             <table>
                 <tr>
                     <td></td>
-                    <td><input type="text" value="VIEW BOOKS"></td>
+                    <td><input type="submit" value="VIEW BOOKS"></td>
                 </tr>
             </table>
         </form>

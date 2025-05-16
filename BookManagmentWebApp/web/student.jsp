@@ -15,7 +15,7 @@
         <h1>Student Page</h1>
         <ul>
             <li><a href="view_all_books.jsp">View All Books</a></li>
-            <li><a href="get_books_by_year">Get Books By Year</a></li>
+            <li><a href="get_books_by_year.jsp">Get Books By Year</a></li>
         </ul>
 
     </body>

@@ -16,6 +16,10 @@
         <servlet-name>ViewBookServlet</servlet-name>
         <servlet-class>za.ac.tut.web.ViewBookServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>GetBookByAuthorServlet</servlet-name>
+        <servlet-class>za.ac.tut.web.GetBookByAuthorServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AddBookServlet</servlet-name>
         <url-pattern>/AddBookServlet.do</url-pattern>
@@ -32,9 +36,21 @@
         <servlet-name>ViewBookServlet</servlet-name>
         <url-pattern>/ViewBookServlet.do</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetBookByAuthorServlet</servlet-name>
+        <url-pattern>/GetBookByAuthorServlet.do</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30
         </session-timeout>
     </session-config>
+    <error-page>
+        <exception-type>java.lang.NumberFormatException</exception-type>
+        <location>/number_format_error.jsp</location>
+    </error-page>
+    <error-page>
+        <exception-type>java.lang.NumberFormatException</exception-type>
+        <location>/number_format_error.jsp</location>
+    </error-page>
 </web-app>

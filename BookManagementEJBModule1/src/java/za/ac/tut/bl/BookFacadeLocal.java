@@ -31,7 +31,7 @@ public interface BookFacadeLocal {
     int count();
     
     //Customized Methods-JPQL
-    //List<Book> getBookByYear(); 
+    List<Book> getBookByYear(Integer year); 
     
-    //List<Book> getBookByAuthorName();
+    List<Book> getBookByAuthorName(String author);
 }
